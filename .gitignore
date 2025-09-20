@@ -1,2 +1,3 @@
-src/load_profile_data.parque
+src/load_profile_data.parquet
 src/load_profile_data.csv
+src/.ipynb_checkpoints/*
