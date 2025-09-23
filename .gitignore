@@ -1,2 +1,4 @@
-src/load_profile_data_*.csv
+src/input/*
+src/timeseries-aggregated/.ipynb_checkpoints/*
+src/load-profile-decomposition/.ipynb_checkpoints/*
 src/.ipynb_checkpoints/*
