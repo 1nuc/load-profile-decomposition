@@ -72,3 +72,15 @@ class loadProfile:
             label=col.removeprefix('out.electricity.')
             plot.set(xlabel='Hour of the day', ylabel=label)
             plt.show()
+            
+    def test_corr(self,df,var):
+        cols=[col for col in df.columns if col.startswith('out.electricity') and col != var]
+        arr=[]
+        for col in cols:
+            p_corr, p_val=stats.pearsonr(df[col], df[var])
+            df_test=pd.DataFrame({
+            "p_value":[p_val],
+            "pearson correlation:" : [p_corr],
+            "col": [col]})
+            arr.append(df_test)
+        return pd.concat(arr)
