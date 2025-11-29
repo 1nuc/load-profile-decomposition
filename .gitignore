@@ -1,4 +1,5 @@
 src/input/*
+src/Customer_analysis/.ipynb_checkpoints/*
 src/timeseries-aggregated/.ipynb_checkpoints/*
 src/load-profile-decomposition/.ipynb_checkpoints/*
 src/Customer_analysis/.ipynb_checkpoints/*
