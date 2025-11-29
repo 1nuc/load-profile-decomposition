@@ -26,4 +26,4 @@ class loadProfile:
     def boxen_exp(self):
         fig, ax=plt.subplots(self.dev_count, 1, figsize=(10, 7 * self.dev_count))
         for i,x in enumerate(self.devices):
-            sns.boxenplot(data=self.data, x=x, y='timestamp', ax=ax[i])
+            sns.boxenplot(data=self.data, x=x, ax=ax[i])
