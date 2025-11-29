@@ -33,22 +33,42 @@ class loadProfile:
     def edit_column_names(self,df):
         df=df.rename(lambda col: col.replace('.energy_consumption..kwh', ''))
         return df
+
     def barplot_seaborn(self,x,y):
         plot=sns.barplot(
             data=self.data, 
             x=x, 
             y=y, 
             hue=y, estimator='sum')
+    
+    def barplot_mat(self,x,y):
+        plt.barplot(
+            data=self.data, 
+            x=x, 
+            y=y, 
+            hue=y, estimator='sum')
         
-        plot.set(xlabel)
     def test_corr(df,var):
         cols=[col for col in df.columns if col.startswith('out.electricity') and col != var]
         arr=[]
         for col in cols:
             p_corr, p_val=stats.pearsonr(df[col], df[var])
             df_test=pd.DataFrame({
-            "p_value":[p_val],
-            "pearson correlation:" : [p_corr],
-            "col": [col]})
+                "p_value":[p_val],
+                "pearson correlation:": [p_corr],
+                "col": [col]
+            })
             arr.append(df_test)
         return pd.concat(arr)
+    
+    def display_totals(self,df, x, y):
+        sns.jointplot(data=df, x=x, y=y, kind='reg')
+        
+    # visualizing long duration devices per each hour of the day by having a barplot
+    def long_dev_hourly(self,df):
+        cols=[col for col in df.columns if col.startswith('out.electricity')]
+        for col in cols:
+            plot=sns.barplot(data=df, x='hour of the day', y=col, color='purple')
+            label=col.removeprefix('out.electricity.')
+            plot.set(xlabel='Hour of the day', ylabel=label)
+            plt.show()
