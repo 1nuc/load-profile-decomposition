@@ -1,5 +1,17 @@
 field_location,field_name,data_type,units,field_description
 metadata_and_annual,bldg_id,string,n/a,The dwelling unit model ID number (between 1 and the number of samples).
+metadata_and_annual,in.representative_income,float,usd,Income for this dwelling unit.
+metadata_and_annual,in.area_median_income,string,n/a,Area median income of the household occupying the dwelling unit. Zero for vacant units.
+metadata_and_annual,in.bedrooms,integer,n/a,The number of bedrooms in the dwelling unit.
+metadata_and_annual,in.building_america_climate_zone,string,n/a,The Building America Climate Zone where the sample is located.
+metadata_and_annual,in.county,string,n/a,The U.S. County where the sample is located.
+metadata_and_annual,in.household_has_tribal_persons,string,n/a,The household occupying the dwelling unit has at least one tribal person in the household.
+metadata_and_annual,in.income,string,n/a,Income bin of the household occupying the dwelling unit.
+metadata_and_annual,in.income_recs_2015,string,n/a,Income bin of the household occupying the dwelling unit that are aligned with the 2015 Residential Energy Consumption Survey (RECS).
+metadata_and_annual,in.income_recs_2020,string,n/a,Income bin of the household occupying the dwelling unit that are aligned with the 2020 Residential Energy Consumption Survey (RECS).
+metadata_and_annual,in.occupants,string,n/a,The number of occupants living in the dwelling unit.
+metadata_and_annual,in.state,string,n/a,The U.S. State.
+metadata_and_annual,in.tenure,string,n/a,The tenancy (owner or renter) of the household occupying the dwelling unit.
 metadata_and_annual,out.electricity.ceiling_fan.energy_consumption..kwh,float,kwh,Electricity consumed by ceiling fan.
 metadata_and_annual,out.electricity.clothes_dryer.energy_consumption..kwh,float,kwh,Electricity consumed by clothes dryer.
 metadata_and_annual,out.electricity.clothes_washer.energy_consumption..kwh,float,kwh,Electricity consumed by clothes washer.

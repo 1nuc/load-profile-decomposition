@@ -1,0 +1,181 @@
+field_location,field_name,data_type,units,field_description
+metadata_and_annual,bldg_id,string,n/a,The dwelling unit model ID number (between 1 and the number of samples).
+metadata_and_annual,in.representative_income,float,usd,Income for this dwelling unit.
+metadata_and_annual,in.area_median_income,string,n/a,Area median income of the household occupying the dwelling unit. Zero for vacant units.
+metadata_and_annual,in.bedrooms,integer,n/a,The number of bedrooms in the dwelling unit.
+metadata_and_annual,in.building_america_climate_zone,string,n/a,The Building America Climate Zone where the sample is located.
+metadata_and_annual,in.county,string,n/a,The U.S. County where the sample is located.
+metadata_and_annual,in.household_has_tribal_persons,string,n/a,The household occupying the dwelling unit has at least one tribal person in the household.
+metadata_and_annual,in.income,string,n/a,Income bin of the household occupying the dwelling unit.
+metadata_and_annual,in.income_recs_2015,string,n/a,Income bin of the household occupying the dwelling unit that are aligned with the 2015 Residential Energy Consumption Survey (RECS).
+metadata_and_annual,in.income_recs_2020,string,n/a,Income bin of the household occupying the dwelling unit that are aligned with the 2020 Residential Energy Consumption Survey (RECS).
+metadata_and_annual,in.occupants,string,n/a,The number of occupants living in the dwelling unit.
+metadata_and_annual,in.state,string,n/a,The U.S. State.
+metadata_and_annual,in.tenure,string,n/a,The tenancy (owner or renter) of the household occupying the dwelling unit.
+metadata_and_annual,out.electricity.ceiling_fan.energy_consumption..kwh,float,kwh,Electricity consumed by ceiling fan.
+metadata_and_annual,out.electricity.clothes_dryer.energy_consumption..kwh,float,kwh,Electricity consumed by clothes dryer.
+metadata_and_annual,out.electricity.clothes_washer.energy_consumption..kwh,float,kwh,Electricity consumed by clothes washer.
+metadata_and_annual,out.electricity.cooling_fans_pumps.energy_consumption..kwh,float,kwh,Electricity consumed by supply fan (air distribution) or circulating pump (geothermal loop) during cooling.
+metadata_and_annual,out.electricity.cooling.energy_consumption..kwh,float,kwh,Electricity consumed by cooling systems excludes usage by fans/pumps.
+metadata_and_annual,out.electricity.dishwasher.energy_consumption..kwh,float,kwh,Electricity consumed by dishwasher. 
+metadata_and_annual,out.electricity.ev_charging.energy_consumption..kwh,float,kwh,Electricity consumed by electric vehicle charging.
+metadata_and_annual,out.electricity.freezer.energy_consumption..kwh,float,kwh,Electricity consumed by standalone freezers.
+metadata_and_annual,out.electricity.heating_fans_pumps.energy_consumption..kwh,float,kwh,Electricity consumed by supply fan (air distribution) or circulating pump (hydronic distribution or geothermal loop) during heating.
+metadata_and_annual,out.electricity.heating_hp_bkup.energy_consumption..kwh,float,kwh,"Electricity consumed by heat pump backup, excludes usage by heat pump backup fans/pumps."
+metadata_and_annual,out.electricity.heating_hp_bkup_fa.energy_consumption..kwh,float,kwh,Electricity consumed by supply fan (air distribution) or circulating pump (hydronic distribution) during heat pump backup.
+metadata_and_annual,out.electricity.heating.energy_consumption..kwh,float,kwh,Electricity consumed by heating systems excludes usage by fans/pumps.
+metadata_and_annual,out.electricity.permanent_spa_heat.energy_consumption..kwh,float,kwh,Electricity consumed by spa heating.
+metadata_and_annual,out.electricity.permanent_spa_pump.energy_consumption..kwh,float,kwh,Electricity consumed by spa pump.
+metadata_and_annual,out.electricity.hot_water.energy_consumption..kwh,float,kwh,Electricity consumed by hot water system excludes recirc pump and solar thermal pump. 
+metadata_and_annual,out.electricity.hot_water_solar_th.energy_consumption..kwh,float,kwh,Electricity consumed by solar thermal hot water system. Non-zero only when using detailed (not simple) solar thermal inputs
+metadata_and_annual,out.electricity.lighting_exterior.energy_consumption..kwh,float,kwh,"Electricity consumed by exterior lighting, includes exterior holiday lighting."
+metadata_and_annual,out.electricity.lighting_garage.energy_consumption..kwh,float,kwh,Electricity consumed by lighting in the garage.
+metadata_and_annual,out.electricity.lighting_interior.energy_consumption..kwh,float,kwh,Electricity consumed by interior lighting.
+metadata_and_annual,out.electricity.mech_vent.energy_consumption..kwh,float,kwh,"Electricity consumed by mechanical ventilation system, excludes preheating/precooling"
+metadata_and_annual,out.electricity.plug_loads.energy_consumption..kwh,float,kwh,"Electricity consumed by plug loads, excludes independently reported plug loads (e.g., well pump)."
+metadata_and_annual,out.electricity.pool_heater.energy_consumption..kwh,float,kwh,Electricity consumed by pool heater.
+metadata_and_annual,out.electricity.pool_pump.energy_consumption..kwh,float,kwh,Electricity consumed by pool pump.
+metadata_and_annual,out.electricity.pv.energy_consumption..kwh,float,kwh,Energy produced by rooftop PV systems. Negative value for any power produced
+metadata_and_annual,out.electricity.range_oven.energy_consumption..kwh,float,kwh,Electricity consumed by range oven.
+metadata_and_annual,out.electricity.refrigerator.energy_consumption..kwh,float,kwh,Electricity consumed by refrigerator. 
+metadata_and_annual,out.electricity.television.energy_consumption..kwh,float,kwh,Electricity consumed by television.
+metadata_and_annual,out.electricity.well_pump.energy_consumption..kwh,float,kwh,Electricity consumed by well pump.
+metadata_and_annual,out.fuel_oil.heating.energy_consumption..kwh,float,kwh,"Fuel oil consumed by fuel oil heating systems, excludes heat pump backup."
+metadata_and_annual,out.fuel_oil.hot_water.energy_consumption..kwh,float,kwh,Fuel oil consumed by fuel oil hot water systems
+metadata_and_annual,out.natural_gas.clothes_dryer.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas clothes dryers.
+metadata_and_annual,out.natural_gas.fireplace.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas fireplaces.
+metadata_and_annual,out.natural_gas.grill.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas grills.
+metadata_and_annual,out.natural_gas.heating.energy_consumption..kwh,float,kwh,"Natural gas consumed by natural gas heating systems, excludes heat pump backup."
+metadata_and_annual,out.natural_gas.permanent_spa_heat.energy_consumption..kwh,float,kwh,Natural gas consumed by spa heating.
+metadata_and_annual,out.natural_gas.hot_water.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas hot water systems.
+metadata_and_annual,out.natural_gas.lighting.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas lighting.
+metadata_and_annual,out.natural_gas.pool_heater.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas pool heaters.
+metadata_and_annual,out.natural_gas.range_oven.energy_consumption..kwh,float,kwh,Natural gas consumed by natural gas range and oven.
+metadata_and_annual,out.propane.clothes_dryer.energy_consumption..kwh,float,kwh,Propane consumed by propane clothes dryers.
+metadata_and_annual,out.propane.heating.energy_consumption..kwh,float,kwh,"Propane consumed by propane heating systems, excludes heat pump backup"
+metadata_and_annual,out.propane.hot_water.energy_consumption..kwh,float,kwh,Propane consumed by propane hot water systems.
+metadata_and_annual,out.propane.range_oven.energy_consumption..kwh,float,kwh,Propane consumed by range oven.
+metadata_and_annual,out.site_energy.net.energy_consumption..kwh,float,kwh,Total site energy consumed subtracts any power produced by PV or generators
+metadata_and_annual,out.site_energy.total.energy_consumption..kwh,float,kwh,"Total site energy consumed, includes any battery charging/discharging"
+metadata_and_annual,out.electricity.net.energy_consumption..kwh,float,kwh,Total electricity consumed subtracts any power produced by PV or generators.
+metadata_and_annual,out.electricity.total.energy_consumption..kwh,float,kwh,"Total electricity consumed, includes any battery charging/discharging"
+metadata_and_annual,out.fuel_oil.total.energy_consumption..kwh,float,kwh,"Total fuel oil consumed, includes 'fuel oil', 'fuel oil 1', 'fuel oil 2', 'fuel oil 4', 'fuel oil 5/6', 'kerosene', and 'diesel'"
+metadata_and_annual,out.natural_gas.total.energy_consumption..kwh,float,kwh,Total natural gas consumed.
+metadata_and_annual,out.propane.total.energy_consumption..kwh,float,kwh,Total propane energy consumed
+metadata_and_annual,out.hot_water.clothes_washer..gal,float,gal,Hot water consumed by clothes washer
+metadata_and_annual,out.hot_water.dishwasher..gal,float,gal,Hot water consumed by dishwasher
+metadata_and_annual,out.hot_water.distribution_waste..gal,float,gal,Hot water consumed by water distribution system (water remaining in the pipe)
+metadata_and_annual,out.hot_water.fixtures..gal,float,gal,"Hot water consumed by showers, sinks, and baths"
+metadata_and_annual,out.load.cooling.energy_delivered..kbtu,float,kbtu,Total energy delivered by cooling system includes HVAC distribution losses.
+metadata_and_annual,out.load.heating.energy_delivered..kbtu,float,kbtu,Total energy delivered by heating system includes HVAC distribution losses.
+metadata_and_annual,out.load.hot_water.energy_delivered..kbtu,float,kbtu,Total energy delivered by hot water system includes contributions by desuperheaters or solar thermal systems
+metadata_and_annual,out.emissions.fuel_oil.total..co2e_kg,float,n/a,Emissions from on-site fuel oil consumption.
+metadata_and_annual,out.emissions.natural_gas.total..co2e_kg,float,n/a,Emissions from on-site natural gas consumption.
+metadata_and_annual,out.emissions.propane.total..co2e_kg,float,n/a,Emissions from on-site propane consumption.
+metadata_and_annual,out.electricity.ceiling_fan.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.clothes_dryer.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.clothes_washer.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.cooling.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.cooling_fans_pumps.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.dishwasher.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.ev_charging.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.freezer.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.heating.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.heating_fans_pumps.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.heating_hp_bkup.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.heating_hp_bkup_fa.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.hot_water.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.hot_water_solar_th.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.lighting_exterior.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.lighting_garage.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.lighting_interior.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.mech_vent.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.net.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.permanent_spa_heat.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.permanent_spa_pump.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.plug_loads.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.pool_heater.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.pool_pump.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.pv.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.range_oven.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.refrigerator.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.television.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.total.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.electricity.well_pump.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.fuel_oil.heating.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.fuel_oil.hot_water.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.fuel_oil.total.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.clothes_dryer.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.fireplace.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.grill.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.heating.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.hot_water.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.lighting.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.permanent_spa_heat.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.pool_heater.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.range_oven.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.natural_gas.total.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.propane.clothes_dryer.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.propane.heating.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.propane.hot_water.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.propane.range_oven.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.propane.total.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.site_energy.net.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+metadata_and_annual,out.site_energy.total.energy_consumption_intensity..kwh_per_ft2,float,kwh_per_ft2,Calculated from annual energy consumption by dividing by conditioned floor area
+timeseries_aggregates,out.electricity.ceiling_fan.energy_consumption..kwh,float,kWh,Electricity consumed by ceiling fan.
+timeseries_aggregates,out.electricity.clothes_dryer.energy_consumption..kwh,float,kWh,Electricity consumed by clothes dryer.
+timeseries_aggregates,out.electricity.clothes_washer.energy_consumption..kwh,float,kWh,Electricity consumed by clothes washer.
+timeseries_aggregates,out.electricity.cooling_fans_pumps.energy_consumption..kwh,float,kWh,Electricity consumed by supply fan (air distribution) or circulating pump (geothermal loop) during cooling.
+timeseries_aggregates,out.electricity.cooling.energy_consumption..kwh,float,kWh,Electricity consumed by cooling systems excludes usage by fans/pumps.
+timeseries_aggregates,out.electricity.dishwasher.energy_consumption..kwh,float,kWh,Electricity consumed by dishwasher. 
+timeseries_aggregates,out.electricity.ev_charging.energy_consumption..kwh,float,kWh,Electricity consumed by electric vehicle charging.
+timeseries_aggregates,out.electricity.freezer.energy_consumption..kwh,float,kWh,Electricity consumed by standalone freezers.
+timeseries_aggregates,out.electricity.heating_fans_pumps.energy_consumption..kwh,float,kWh,Electricity consumed by supply fan (air distribution) or circulating pump (hydronic distribution or geothermal loop) during heating.
+timeseries_aggregates,out.electricity.heating_hp_bkup.energy_consumption..kwh,float,kWh,"Electricity consumed by heat pump backup, excludes usage by heat pump backup fans/pumps."
+timeseries_aggregates,out.electricity.heating_hp_bkup_fa.energy_consumption..kwh,float,kWh,Electricity consumed by supply fan (air distribution) or circulating pump (hydronic distribution) during heat pump backup.
+timeseries_aggregates,out.electricity.heating.energy_consumption..kwh,float,kWh,Electricity consumed by heating systems excludes usage by fans/pumps.
+timeseries_aggregates,out.electricity.permanent_spa_heat.energy_consumption..kwh,float,kWh,Electricity consumed by spa heating.
+timeseries_aggregates,out.electricity.permanent_spa_pump.energy_consumption..kwh,float,kWh,Electricity consumed by spa pump.
+timeseries_aggregates,out.electricity.hot_water.energy_consumption..kwh,float,kWh,Electricity consumed by hot water system excludes recirc pump and solar thermal pump. 
+timeseries_aggregates,out.electricity.hot_water_solar_th.energy_consumption..kwh,float,kWh,Electricity consumed by solar thermal hot water system. Non-zero only when using detailed (not simple) solar thermal inputs
+timeseries_aggregates,out.electricity.lighting_exterior.energy_consumption..kwh,float,kWh,"Electricity consumed by exterior lighting, includes exterior holiday lighting."
+timeseries_aggregates,out.electricity.lighting_garage.energy_consumption..kwh,float,kWh,Electricity consumed by lighting in the garage.
+timeseries_aggregates,out.electricity.lighting_interior.energy_consumption..kwh,float,kWh,Electricity consumed by interior lighting.
+timeseries_aggregates,out.electricity.mech_vent.energy_consumption..kwh,float,kWh,"Electricity consumed by mechanical ventilation system, excludes preheating/precooling"
+timeseries_aggregates,out.electricity.plug_loads.energy_consumption..kwh,float,kWh,"Electricity consumed by plug loads, excludes independently reported plug loads (e.g., well pump)."
+timeseries_aggregates,out.electricity.pool_heater.energy_consumption..kwh,float,kWh,Electricity consumed by pool heater.
+timeseries_aggregates,out.electricity.pool_pump.energy_consumption..kwh,float,kWh,Electricity consumed by pool pump.
+timeseries_aggregates,out.electricity.pv.energy_consumption..kwh,float,kWh,Energy produced by rooftop PV systems. Negative value for any power produced
+timeseries_aggregates,out.electricity.range_oven.energy_consumption..kwh,float,kWh,Electricity consumed by range oven.
+timeseries_aggregates,out.electricity.refrigerator.energy_consumption..kwh,float,kWh,Electricity consumed by refrigerator. 
+timeseries_aggregates,out.electricity.television.energy_consumption..kwh,float,kWh,Electricity consumed by television.
+timeseries_aggregates,out.electricity.well_pump.energy_consumption..kwh,float,kWh,Electricity consumed by well pump.
+timeseries_aggregates,out.fuel_oil.heating.energy_consumption..kwh,float,kWh,"Fuel oil consumed by fuel oil heating systems, excludes heat pump backup."
+timeseries_aggregates,out.fuel_oil.hot_water.energy_consumption..kwh,float,kWh,Fuel oil consumed by fuel oil hot water systems
+timeseries_aggregates,out.natural_gas.clothes_dryer.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas clothes dryers.
+timeseries_aggregates,out.natural_gas.fireplace.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas fireplaces.
+timeseries_aggregates,out.natural_gas.grill.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas grills.
+timeseries_aggregates,out.natural_gas.heating_hp_bkup.energy_consumption..kwh,float,kWh,Natural gas consumed by heat pump backup.
+timeseries_aggregates,out.natural_gas.heating.energy_consumption..kwh,float,kWh,"Natural gas consumed by natural gas heating systems, excludes heat pump backup."
+timeseries_aggregates,out.natural_gas.permanent_spa_heat.energy_consumption..kwh,float,kWh,Natural gas consumed by spa heating.
+timeseries_aggregates,out.natural_gas.hot_water.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas hot water systems.
+timeseries_aggregates,out.natural_gas.lighting.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas lighting.
+timeseries_aggregates,out.natural_gas.pool_heater.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas pool heaters.
+timeseries_aggregates,out.natural_gas.range_oven.energy_consumption..kwh,float,kWh,Natural gas consumed by natural gas range and oven.
+timeseries_aggregates,out.propane.clothes_dryer.energy_consumption..kwh,float,kWh,Propane consumed by propane clothes dryers.
+timeseries_aggregates,out.propane.heating.energy_consumption..kwh,float,kWh,"Propane consumed by propane heating systems, excludes heat pump backup"
+timeseries_aggregates,out.propane.hot_water.energy_consumption..kwh,float,kWh,Propane consumed by propane hot water systems.
+timeseries_aggregates,out.propane.range_oven.energy_consumption..kwh,float,kWh,Propane consumed by range oven.
+timeseries_aggregates,out.site_energy.net.energy_consumption..kwh,float,kWh,Total site energy consumed subtracts any power produced by PV or generators
+timeseries_aggregates,out.site_energy.total.energy_consumption..kwh,float,kWh,"Total site energy consumed, includes any battery charging/discharging"
+timeseries_aggregates,out.electricity.net.energy_consumption..kwh,float,kWh,Total electricity consumed subtracts any power produced by PV or generators.
+timeseries_aggregates,out.electricity.total.energy_consumption..kwh,float,kWh,"Total electricity consumed, includes any battery charging/discharging"
+timeseries_aggregates,out.fuel_oil.total.energy_consumption..kwh,float,kWh,"Total fuel oil consumed, includes 'fuel oil', 'fuel oil 1', 'fuel oil 2', 'fuel oil 4', 'fuel oil 5/6', 'kerosene', and 'diesel'"
+timeseries_aggregates,out.natural_gas.total.energy_consumption..kwh,float,kWh,Total natural gas consumed.
+timeseries_aggregates,out.propane.total.energy_consumption..kwh,float,kWh,Total propane energy consumed
+timeseries_aggregates,out.load.cooling.energy_delivered..kbtu,float,kBtu,Total energy delivered by cooling system includes HVAC distribution losses.
+timeseries_aggregates,out.load.heating.energy_delivered..kbtu,float,kBtu,Total energy delivered by heating system includes HVAC distribution losses.
+timeseries_aggregates,out.load.hot_water.energy_delivered..kbtu,float,kBtu,Total energy delivered by hot water system includes contributions by desuperheaters or solar thermal systems
+timeseries_aggregates,out.emissions.fuel_oil.total..co2e_kg,float,n/a,Emissions from on-site fuel oil consumption.
+timeseries_aggregates,out.emissions.natural_gas.total..co2e_kg,float,n/a,Emissions from on-site natural gas consumption.
+timeseries_aggregates,out.emissions.propane.total..co2e_kg,float,n/a,Emissions from on-site propane consumption.
