@@ -84,3 +84,10 @@ class loadProfile:
             "col": [col]})
             arr.append(df_test)
         return pd.concat(arr)
+    
+        def _barplot_seaborn(data,x,y):
+            plot=sns.barplot(
+                data=data, 
+                x=x, 
+                y=y, 
+                hue=y, estimator='sum')
