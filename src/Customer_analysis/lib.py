@@ -99,3 +99,16 @@ class loadProfile:
             x=x, 
             y=y, 
             hue=y, estimator='sum')
+    
+    def lineplot(self, data, x,y):
+        plt.figure(figsize=(20,8))
+        if isinstance(y, list):
+            for device in y:
+                ylabel=device.removeprefix('out.electricity.')
+                if device.startswith('out.site_energy.'):
+                    ylabel=device.removeprefix('out.')
+                sns.lineplot(data=data, x=x ,y=device, label=ylabel)
+        else:
+            ylabel=y.removeprefix('out.electricity')
+            sns.lineplot(data=data, x=x ,y=device, label=ylabel, color='b')
+        plt.show()
