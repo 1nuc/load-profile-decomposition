@@ -2,6 +2,7 @@ field_location,field_name,data_type,units,field_description
 metadata_and_annual,bldg_id,string,n/a,The dwelling unit model ID number (between 1 and the number of samples).
 metadata_and_annual,in.representative_income,float,usd,Income for this dwelling unit.
 metadata_and_annual,in.area_median_income,string,n/a,Area median income of the household occupying the dwelling unit. Zero for vacant units.
+metadata_and_annual,in.ashrae_iecc_climate_zone_2004_sub_cz_split,string,n/a,"Climate zone of the dwelling unit according to ASHRAE 169 in 2004 and IECC in 2012. Climate zone 2A is split between counties in TX, LA and FL, GA, AL, and MS and climate zone 1A is split between counties in FL and HI."
 metadata_and_annual,in.bedrooms,integer,n/a,The number of bedrooms in the dwelling unit.
 metadata_and_annual,in.building_america_climate_zone,string,n/a,The Building America Climate Zone where the sample is located.
 metadata_and_annual,in.county,string,n/a,The U.S. County where the sample is located.

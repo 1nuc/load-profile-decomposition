@@ -18,20 +18,26 @@ class loadProfile:
     def boxplot_exp(self):
         fig, ax=plt.subplots(self.dev_count, 1, figsize=(10, 7 * self.dev_count))
         for i,x in enumerate(self.devices):
-            sns.boxplot(data=self.data, x=x, ax=ax[i])
+            plot=sns.boxplot(data=self.data, x=x, ax=ax[i])
+            xlabel=x.removeprefix("out.electricity.")
+            plot.set(xlabel=xlabel, ylabel="count")
     
     def hist_exp(self):
         fig, ax=plt.subplots(self.dev_count, 1, figsize=(10, 7 * self.dev_count))
         for i,x in enumerate(self.devices):
-            sns.histplot(data=self.data, x=x, ax=ax[i])
+            plot=sns.histplot(data=self.data, x=x, ax=ax[i])
+            xlabel=x.removeprefix("out.electricity.")
+            plot.set(xlabel=xlabel, ylabel="count")
                 
     def boxen_exp(self):
         fig, ax=plt.subplots(self.dev_count, 1, figsize=(10, 7 * self.dev_count))
         for i,x in enumerate(self.devices):
-            sns.boxenplot(data=self.data, x=x, ax=ax[i])
+            plot=sns.boxenplot(data=self.data, x=x, ax=ax[i])
+            xlabel=x.removeprefix("out.electricity.")
+            plot.set(xlabel=xlabel, ylabel="count")
     
     def edit_column_names(self,df):
-        df=df.rename(lambda col: col.replace('.energy_consumption..kwh', ''))
+        df=df.rename(lambda col: col.replace('in.','') if col.startswith('in.') else col.replace('.energy_consumption..kwh', ''))
         return df
 
     def barplot_seaborn(self,x,y):
