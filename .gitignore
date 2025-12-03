@@ -4,3 +4,4 @@ src/timeseries-aggregated/.ipynb_checkpoints/*
 src/load-profile-decomposition/.ipynb_checkpoints/*
 src/Customer_analysis/.ipynb_checkpoints/*
 src/.ipynb_checkpoints/*
+**/__pycache__
