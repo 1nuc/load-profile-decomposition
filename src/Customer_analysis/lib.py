@@ -87,6 +87,7 @@ class loadProfile:
         return pd.concat(arr)
     
     def _barplot_seaborn(self,data,x,y):
+        plt.figure(figsize=(20, 8))
         plot=sns.barplot(
             data=data, 
             x=x, 
