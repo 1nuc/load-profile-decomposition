@@ -68,6 +68,7 @@ class loadProfile:
     def long_dev_temporal_based(self,df, temporal_type):
         cols=[col for col in df.columns if col.startswith('out.electricity')]
         for col in cols:
+            plt.figure(figsize=(20,8))
             plot=sns.barplot(data=df, x=temporal_type, y=col, color='purple')
             label=col.removeprefix('out.electricity.')
             plot.set(xlabel=temporal_type, ylabel=label)
