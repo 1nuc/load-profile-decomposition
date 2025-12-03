@@ -65,12 +65,12 @@ class loadProfile:
         sns.jointplot(data=df, x=x, y=y, kind='reg')
         
     # visualizing long duration devices per each hour of the day by having a barplot
-    def long_dev_hourly(self,df):
+    def long_dev_temporal_based(self,df, temporal_type):
         cols=[col for col in df.columns if col.startswith('out.electricity')]
         for col in cols:
-            plot=sns.barplot(data=df, x='hour of the day', y=col, color='purple')
+            plot=sns.barplot(data=df, x=temporal_type, y=col, color='purple')
             label=col.removeprefix('out.electricity.')
-            plot.set(xlabel='Hour of the day', ylabel=label)
+            plot.set(xlabel=temporal_type, ylabel=label)
             plt.show()
             
     def test_corr(self,df,var):
@@ -85,9 +85,9 @@ class loadProfile:
             arr.append(df_test)
         return pd.concat(arr)
     
-        def _barplot_seaborn(data,x,y):
-            plot=sns.barplot(
-                data=data, 
-                x=x, 
-                y=y, 
-                hue=y, estimator='sum')
+    def _barplot_seaborn(self,data,x,y):
+        plot=sns.barplot(
+            data=data, 
+            x=x, 
+            y=y, 
+            hue=y, estimator='sum')
