@@ -92,13 +92,20 @@ class loadProfile:
             arr.append(df_test)
         return pd.concat(arr)
     
-    def _barplot_seaborn(self,data,x,y):
+    def _barplot_seaborn(self,data,x,y, hue_var=None):
         plt.figure(figsize=(20, 8))
-        plot=sns.barplot(
-            data=data, 
-            x=x, 
-            y=y, 
-            hue=y, estimator='sum')
+        if hue_var !=None:
+            plot=sns.barplot(
+                data=data, 
+                x=x, 
+                y=y, 
+                hue=hue_var, estimator='sum')
+        else :
+            plot=sns.barplot(
+                data=data, 
+                x=x, 
+                y=y, 
+                hue=y, estimator='sum')
         plt.show()
     
     def lineplot(self, data, x,y):
@@ -113,4 +120,13 @@ class loadProfile:
             ylabel=y.removeprefix('out.electricity')
             sns.lineplot(data=data, x=x ,y=device, label=ylabel, color='b')
         plot.set(xlabel=x, ylabel="usage")
+        plt.show()
+
+    def replot_zone(self, data, x,y,labels,hue_var):
+        plt.figure(figsize=(20,8))
+        sns.relplot(
+            data=data, x=x, y=y,
+            col=hue_var, hue=labels, style=labels,
+            kind="line" 
+        )
         plt.show()
