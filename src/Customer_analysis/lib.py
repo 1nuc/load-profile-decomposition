@@ -138,7 +138,7 @@ class loadProfile:
 
     def heatmap(self,data, labels):
         plt.figure(figsize=(20, 8))
-        plot=sns.heatmap(data, annot=True, fmt=".2f", linewidth=.5, xticklabels=True, yticklabels=True)
+        plot=sns.heatmap(data, annot=True, fmt=".3f", linewidth=.5, xticklabels=True, yticklabels=True)
         plot.set_xticklabels(labels)
         plot.set_yticklabels(labels, rotation=0)
         plt.show()
