@@ -130,3 +130,15 @@ class loadProfile:
             kind="line" 
         )
         plt.show()
+    
+    def pairplot(self,data, hue_var=None):
+        plt.figure(figsize=(20, 8))
+        sns.pairplot(data=data, hue=hue_var)
+        plt.show()
+
+    def heatmap(self,data, labels):
+        plt.figure(figsize=(20, 8))
+        plot=sns.heatmap(data, annot=True, fmt=".2f", linewidth=.5, xticklabels=True, yticklabels=True)
+        plot.set_xticklabels(labels)
+        plot.set_yticklabels(labels, rotation=0)
+        plt.show()
