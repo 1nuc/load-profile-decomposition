@@ -108,8 +108,7 @@ class loadProfile:
                 plot=sns.lineplot(data=data, x=x ,y=device, label=ylabel)
         else:
             ylabel=y.removeprefix('out.electricity')
-            sns.lineplot(data=data, x=x ,y=device, label=ylabel, color='b')
-        plot.set(xlabel=x, ylabel="usage")
+            sns.lineplot(data=data, x=x ,y=y, label=ylabel, color='b')
         plt.show()
 
     def replot_zone(self, data, x,y,labels,hue_var):
