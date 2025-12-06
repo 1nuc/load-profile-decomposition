@@ -117,7 +117,7 @@ class loadProfile:
         sns.relplot(
             data=data, x=x, y=y,
             col=hue_var, hue=labels, style=labels,height=4,
-            kind="line" 
+            kind="line", col_wrap=2 
         )
         plt.show()
     
