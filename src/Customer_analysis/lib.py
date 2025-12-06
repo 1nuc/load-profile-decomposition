@@ -54,7 +54,7 @@ class loadProfile:
             y=y, 
             hue=y, estimator='sum')
         
-    def test_corr(df,var):
+    def test_corr(self,df,var):
         cols=[col for col in df.columns if col.startswith('out.electricity') and col != var]
         arr=[]
         for col in cols:
@@ -135,4 +135,10 @@ class loadProfile:
     def pie(self, data, x, y):
         plt.figure(figsize=(20,8))
         plt.pie(x, labels=y, autopct='%1.1f%%', shadow=True, startangle=90)
+        plt.show()
+
+    def catplot(self, data, x,y, hue_var, col_var):
+        plt.figure(figsize=(20,8))
+        sns.catplot(data=data, x=x, y=y, hue=hue_var, col=col_var,
+                    col_wrap= 2, kind='bar',  aspect=2, height=5)
         plt.show()
