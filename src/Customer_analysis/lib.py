@@ -68,6 +68,7 @@ class loadProfile:
         return pd.concat(arr)
     
     def display_totals(self,df, x, y):
+        plt.figure(figsize=(20,8))
         sns.jointplot(data=df, x=x, y=y, kind='reg')
         
     # visualizing long duration devices per each hour of the day by having a barplot
@@ -80,18 +81,7 @@ class loadProfile:
             plot.set(xlabel=temporal_type, ylabel=label)
             plt.show()
             
-    def test_corr(self,df,var):
-        cols=[col for col in df.columns if col.startswith('out.electricity') and col != var]
-        arr=[]
-        for col in cols:
-            p_corr, p_val=stats.pearsonr(df[col], df[var])
-            df_test=pd.DataFrame({
-            "p_value":[p_val],
-            "pearson correlation:" : [p_corr],
-            "col": [col]})
-            arr.append(df_test)
-        return pd.concat(arr)
-    
+     
     def _barplot_seaborn(self,data,x,y, hue_var=None):
         plt.figure(figsize=(20, 8))
         if hue_var !=None:
@@ -141,4 +131,9 @@ class loadProfile:
         plot=sns.heatmap(data, annot=True, fmt=".3f", linewidth=.5, xticklabels=True, yticklabels=True)
         plot.set_xticklabels(labels)
         plot.set_yticklabels(labels, rotation=0)
+        plt.show()
+
+    def pie(self, data, x, y):
+        plt.figure(figsize=(20,8))
+        plt.pie(x, labels=y, autopct='%1.1f%%', shadow=True, startangle=90)
         plt.show()
