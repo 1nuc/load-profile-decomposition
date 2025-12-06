@@ -107,7 +107,7 @@ class loadProfile:
                     ylabel=device.removeprefix('out.')
                 plot=sns.lineplot(data=data, x=x ,y=device, label=ylabel)
         else:
-            ylabel=y.removeprefix('out.electricity')
+            ylabel=y.removeprefix('.out.electricity')
             sns.lineplot(data=data, x=x ,y=y, label=ylabel, color='b')
         plt.show()
 
