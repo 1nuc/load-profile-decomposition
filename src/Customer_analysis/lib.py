@@ -143,3 +143,16 @@ class loadProfile:
         sns.catplot(data=data, x=x, y=y, hue=hue_var, col=col_var,
                     col_wrap= 2, kind='bar',  aspect=2, height=5)
         plt.show()
+
+    def test_corr_anova(self, df, grp_col, target_col):
+        levels=df.select(pl.col(grp_col).unique()).to_series().to_list()
+        arr=[]
+        for lev in levels:
+            grp=df.filter(pl.col(grp_col)==lev).select(pl.col(target_col)).to_series().to_list()
+            arr.append(grp)
+        anova_test=stats.f_oneway(*arr)
+        d=pl.DataFrame({
+                "Anova test statistic": [anova_test.statistic],
+                "p-value":[anova_test.pvalue]
+        })
+        return d
