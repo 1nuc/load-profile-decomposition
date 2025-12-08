@@ -135,6 +135,7 @@ class loadProfile:
     def pie(self, data, x, y):
         plt.figure(figsize=(20,8))
         plt.pie(x, labels=y, autopct='%1.1f%%', shadow=True, startangle=90)
+        plt.legend(title="Is weekend")
         plt.show()
 
     def catplot(self, data, x,y, hue_var, col_var):
