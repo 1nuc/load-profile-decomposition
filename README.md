@@ -28,4 +28,8 @@ Decomposing the average consumption data to individual appliances
 
 `aws s3 cp --no-sign-request s3://oedi-data-lake/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2025/resstock_amy2018_release_1/timeseries_individual_buildings/by_state/upgrade=28/state=FL/ datasets/ --recursive` 
 
+### Downloading the Metadata for upgrade 28
+
+`aws s3 cp --no-sign-request s3://oedi-data-lake/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2025/resstock_amy2018_release_1/metadata_and_annual_results/by_state/full/parquet/state=FL/FL_upgrade28.parquet input/MetaData.parquet
+`
 
