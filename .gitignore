@@ -1,4 +1,5 @@
 src/input/*
+**/metadata/*
 src/.ipynb_checkpoints/*
 **/.ipynb_checkpoints/*
 **/__pycache__
