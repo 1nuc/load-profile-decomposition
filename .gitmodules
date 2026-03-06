@@ -1,0 +1,3 @@
+[submodule "profile_decompositioion_rs"]
+	path = profile_decompositioion_rs
+	url = git@github.com:1nuc/profile_decompositioion_rs.git
