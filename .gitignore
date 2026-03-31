@@ -1,6 +1,6 @@
-src/input/*
+**/input/*
 **/metadata/*
-src/.ipynb_checkpoints/*
+**/.ipynb_checkpoints/*
 **/.ipynb_checkpoints/*
 **/__pycache__
 datasets/*
