@@ -1,3 +1,7 @@
 [submodule "profile_decompositioion_rs"]
-	path = profile_decompositioion_rs
+	path = decomposer 
 	url = git@github.com:1nuc/profile_decompositioion_rs.git
+
+[submodule "dashboard_load_profile"]
+	path = dashboard_load_profile
+	url = git@github.com:1nuc/dashboard_load_profile.git
